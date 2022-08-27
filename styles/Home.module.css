@@ -1,129 +1,128 @@
-.container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.root{
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
   text-align: center;
+  color: whitesmoke;
+  text-transform: uppercase;
 }
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.play{
+  background-color: #15172b;
+  width: fit-content;
+  max-width: 95vw;
 }
-
-.code {
-  background: #fafafa;
+.scoreSection{
+  width: fit-content;
+  padding: 2px 10px;
+}
+.rock, .paper, .scissors{
+  border-width: 20px;
+  border-style: solid;
+  color: #303245;
+  border-radius: 48%;
+  background-color: whitesmoke;
+  padding: 15px;
+  cursor: pointer;
+}
+.alert{
+  background-color: dodgerblue;
+  width: fit-content;
+  padding: 5px;
+}
+.modalContent{
+  background-color:#15172b;
+  margin-top: 40vh;
+  width: fit-content;
+  border-radius: 9px;
+  padding: 12px;
+}
+.rulesContent{
+  background-color:#15172b;
+  margin-top: 40vh;
+  width: fit-content;
+  max-width: 80vw;
+  border-radius: 9px;
+  padding: 12px 3px;
+}
+.computerStatement{
+  position: absolute;
+  right: 8px;
+}
+.boxShadow{
+  box-shadow: 2px 2px 40px whitesmoke;
+}
+.statement{
+  gap: 20px;
+  grid-template-columns: 2fr 2fr;
+}
+.rock{
+  border-color: #dc2f55;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.alertClose{
+  cursor:pointer;
+}
+.paper{
+  border-color: dodgerblue;
+}
+.restartButtons{
+  background-color: dodgerblue;
   border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  padding: 5px;
+  cursor: pointer;
 }
-
-.grid {
+.scissors{
+  border-color:sienna;
+}
+.scoreModal, .restartModal{
+  background-color: #0b0c17;
+  width: fit-content;
+  max-width: 97vw;
+  height:fit-content;
+  border-radius: 9px;
+  padding: 12px;
+}
+.scoreModal{
+  margin-top: 30vh
+}
+.restartModal{
+  margin-top: 35vh;
+}
+.modalOverlay{
+  position:fixed;
+  background-color: rgb(142, 133, 133);
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+}
+.closeButton{
+  color: #15172b;
+  background-color: whitesmoke;
+  border: 2px solid #dc2f55;
+  border-radius: 9px;
+  padding: 5px 20px;
+  width: fit-content;
+  cursor: pointer;
+}
+.rulesButton{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  padding: 2px 9px;
+  cursor: pointer;
 }
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.computerScore{
+  border-top: 1px solid whitesmoke;
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
+.restartButton{
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  padding: 2px 9px;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
 }
