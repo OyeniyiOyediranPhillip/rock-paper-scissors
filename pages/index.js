@@ -233,7 +233,6 @@ const Page = () => {
       <Head>
         <title>Rock Paper Scissors</title>
         <meta name="description" content="rock paper scissors web game"/>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={`${styles.root}`}>
